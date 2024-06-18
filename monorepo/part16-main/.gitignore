@@ -1,0 +1,8 @@
+.DS_Store
+.pnpm-store/
+node_modules/
+dist/
+.next
+.env*.local
+.turbo/
+!.turbo/config.json

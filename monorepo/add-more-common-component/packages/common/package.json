@@ -1,0 +1,74 @@
+{
+  "name": "@monorepo-library/common",
+  "version": "0.1.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "sideEffect": false,
+  "scripts": {
+    "lint-staged": "lint-staged",
+    "typecheck": "tsc --noEmit",
+    "build": "vite build && pnpm build:dts",
+    "build:dts": "tsc -p tsconfig.dts.json",
+    "version": "npm version"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.21.0",
+    "@vanilla-extract/css-utils": "^0.1.3",
+    "@vanilla-extract/dynamic": "^2.0.3",
+    "@vanilla-extract/recipes": "^0.3.0",
+    "axios": "^1.4.0",
+    "core-js": "3",
+    "dayjs": "^1.11.9",
+    "feather-route-matcher": "4.0.0"
+  },
+  "peerDependencies": {
+    "axios": "1",
+    "clsx": "1",
+    "query-string": "8",
+    "react": "18",
+    "react-dom": "18",
+    "classnames": "2",
+    "sass": "1",
+    "next": "13",
+    "react-loader-spinner": "5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/plugin-transform-runtime": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@testing-library/dom": "^8.20.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/axios": "^0.14.0",
+    "@types/feather-route-matcher": "^4.0.0",
+    "@types/node": "20.1.7",
+    "@types/query-string": "^6.3.0",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "@vanilla-extract/vite-plugin": "^3.7.1",
+    "@vitejs/plugin-react-swc": "^3.0.1",
+    "@monorepo-library/tsconfig": "workspace:*",
+    "glob": "^7",
+    "jsdom": "^21.1.0",
+    "storybook": "7.0.2",
+    "typescript": "5.0.2",
+    "vite": "^4.0.4"
+  }
+}

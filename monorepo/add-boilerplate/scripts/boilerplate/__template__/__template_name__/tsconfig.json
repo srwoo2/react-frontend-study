@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@monorepo-library/tsconfig/base.json",
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "typeRoots": ["node_modules/@types", "typings"],
+    "allowJs": true,
+    "noEmit": true,
+    "incremental": true,
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next",
+      },
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+    },
+  },
+  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],
+}

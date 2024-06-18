@@ -1,0 +1,22 @@
+.review {
+  padding: 2rem 0;
+  line-height: 2.3rem;
+
+  .writer {
+    font-size: 1.5rem;
+
+    span {
+      font-size: 1.2rem;
+      color: var(--dark-gray);
+    }
+  }
+
+  .content {
+    font-size: 1.7rem;
+  }
+
+  .date {
+    font-size: 1.3rem;
+    color: var(--dark-gray);
+  }
+}

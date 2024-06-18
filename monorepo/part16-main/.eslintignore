@@ -1,0 +1,9 @@
+coverage
+dist
+node_modules
+
+*.js
+*.cjs
+*.mjs
+
+*.d.ts

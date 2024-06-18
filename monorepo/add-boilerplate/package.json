@@ -1,0 +1,51 @@
+{
+  "name": "monorepo-next-with-turborepo",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint-staged": "lint-staged",
+    "postinstall": "if [[ -x \"$(command -v husky)\" ]]; then husky install; fi",
+    "cli": "node ./scripts/cli/index.mjs",
+    "bp": "node ./scripts/boilerplate/index.mjs"
+  },
+  "keywords": [],
+  "author": "Vallista",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "8",
+    "eslint-config-turbo": "0.0.8",
+    "lint-staged": "13",
+    "prettier": "3",
+    "turbo": "1.9.3",
+    "typescript": "5",
+    "concurrently": "^8.0.1",
+    "chalk": "^5.3.0",
+    "dotenv": "16.3.1",
+    "execa": "7.2.0",
+    "yargs": "17.7.2",
+    "@rushstack/eslint-patch": "^1.7.0",
+    "@typescript-eslint/eslint-plugin": "6",
+    "@typescript-eslint/parser": "6",
+    "eslint-config-prettier": "9",
+    "eslint-import-resolver-typescript": "3",
+    "eslint-plugin-import": "2",
+    "eslint-plugin-prettier": "5",
+    "eslint-plugin-react": "7",
+    "eslint-plugin-react-hooks": "4"
+  },
+  "engines": {
+    "node": "18",
+    "pnpm": "8"
+  },
+  "packageManager": "pnpm@8.3.1",
+  "prettier": {
+    "tabWidth": 2,
+    "endOfLine": "auto",
+    "jsxSingleQuote": true,
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}

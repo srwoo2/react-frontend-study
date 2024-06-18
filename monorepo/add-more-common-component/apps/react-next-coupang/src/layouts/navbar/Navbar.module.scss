@@ -1,0 +1,39 @@
+.navbar {
+  border-right: 1px solid var(--border-gray);
+  min-height: 88vh;
+  height: 100%;
+
+  .active {
+    color: var(--color-primary);
+  }
+
+  .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem;
+    background-color: var(--light-blue);
+
+    h4 {
+      text-transform: capitalize;
+      margin-top: 1rem;
+      font-size: 1.7rem;
+      color: var(--color-white);
+    }
+  }
+
+  nav ul {
+    li {
+      border-bottom: 1px solid var(--border-gray);
+      padding: 1rem;
+      position: relative;
+    }
+
+    a {
+      font-size: 1.5rem;
+      display: block;
+      width: 100%;
+    }
+  }
+}

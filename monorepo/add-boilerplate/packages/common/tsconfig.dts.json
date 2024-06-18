@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@monorepo-library/tsconfig/dts.json",
+  "compilerOptions": {
+    "declarationDir": "./dist",
+    "typeRoots": ["node_modules/@types", "typings"]
+  },
+  "include": ["src"],
+  "exclude": ["**/*.stories.*", "**/*.test.*"]
+}
